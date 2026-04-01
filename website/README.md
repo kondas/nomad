@@ -4,7 +4,7 @@
 >
 > **Nomad documentation change**
 >
-> Nomad product documentation no longer publishes from the `/website` directory.
+> Nomad product documentation no longer publishes from the `/website` directory!
 
 The Nomad docs now live in the
 [`hashicorp/web-unified-docs`](https://github.com/hashicorp/web-unified-docs)
