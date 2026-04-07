@@ -47,6 +47,11 @@ func (m *MacOS) scanAppleSilicon(top *Topology) {
 	pCoreSpeed := hw.KHz(m1cpu.PCoreHz() / 1000)
 
 	eCoreCount := m1cpu.ECoreCount()
+	
+	if eCoreCount < 0 {
+	    eCoreCount = 0
+	}
+	
 	eCoreSpeed := hw.KHz(m1cpu.ECoreHz() / 1000)
 
 	top.Cores = make([]Core, pCoreCount+eCoreCount)
